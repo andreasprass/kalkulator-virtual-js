@@ -1,0 +1,51 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    #button-number{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    #container{
+        width: 40%;
+    }
+</style>
+<body>
+    <div id="container">
+        <div>
+            <p id="output">OUTPUT</p>
+        </div>
+        <div id="button-number">
+            <div></div>
+            <div></div>
+            <button id="C">C</button>
+            <button id="Del">Del</button>
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="+">+</button>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="-">-</button>
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="*">*</button>
+            <div></div>
+            <button id="0">0</button>
+            <div></div>
+            <button id="/">/</button>
+        </div>
+    </div>
+<script>
+let number1;
+document.getElementById("1").addEventListener('click', function(){
+    let number1 = 1;
+});
+document.getElementById('output').innerHTML('number1');
+</script>
+</body>
+</html>
